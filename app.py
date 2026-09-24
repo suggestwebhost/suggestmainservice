@@ -4,8 +4,8 @@ import requests
 app = Flask(__name__)
 
 # Define URLs for the internal microservices
-ADDITION_SERVICE_URL = "http://127.0.0"
-MULTIPLICATION_SERVICE_URL = "http://127.0.0"
+ADDITION_SERVICE_URL = "https://suggestadd.onrender.com"
+MULTIPLICATION_SERVICE_URL = "https://suggestmultiply.onrender.com"
 
 @app.route('/calculate', methods=['POST'])
 def calculate():
